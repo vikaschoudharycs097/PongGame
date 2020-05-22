@@ -3,6 +3,14 @@
 
 #include "point.h"
 
+enum class MoveDirection
+{
+    LEFT,
+    RIGHT,
+    TOP,
+    BOTTOM
+};
+
 class Paddle
 {
 private:
@@ -21,7 +29,7 @@ public:
     void setMoves(int moves);
 
     // Update
-    void updatePosition(void);
+    void updatePosition(MoveDirection dir);
 };
 
 #endif
