@@ -17,8 +17,10 @@ private:
     Point _top_left;
     Point _bottom_right;
     int _moves;
+    const int MAX_WIDTH;
+    const int MAX_HEIGHT;
 public:
-    Paddle(Point top_l, Point bottom_r, int moves);
+    Paddle(Point top_l, Point bottom_r, int moves, int max_width, int max_height);
 
     // Getters
     int getWidth(void);
